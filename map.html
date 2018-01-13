@@ -1,0 +1,112 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sofie Probe Network</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/bootstrap-overrides.css">
+        <link rel="stylesheet" href="styles/custom.css">
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600i,900|Nunito:300,400,600,900" rel="stylesheet">
+        <script src="https://use.fontawesome.com/f5e7e74cb3.js"></script>
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    </head>
+    <body>
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default navbar-static-top">
+          <div class="container-fluid navbar-container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html" id="spn-logo">SPN</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="../navbar/" class="link-text">ABOUT ELIXYS</a></li>
+                <li><a href="map.html" class="link-text">FIND A PROBE</a></li>
+                <li><a href="../navbar-fixed-top/" class="link-text">FEATURED</a></li>
+                <li><a href="../navbar-fixed-top/" class="link-text">CONTACT</a></li>
+                <li><a href="../navbar-fixed-top/" class="link-text btn btn-primary">SIGN IN</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav> 
+
+
+        <!-- Main content - map container -->
+        <div class="map-body col-md-12">
+            <!-- Left information card pane -->
+            <div class="col-md-4 left-info-pane">
+                <div class="input-group ui-widget">
+                    <input type="text" class="form-control" placeholder="Search for a site, probe, or location" id="probe-search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </span>
+                </div>
+                <div class="cards-section">
+                    <h3>Probes</h3>
+                    <div class="info">
+                        <p><i class="fa fa-info-circle" aria-hidden="true"></i> Tap on a card to see sites with that probe</p>
+                    </div>
+                </div>
+                
+                <div class="search-results">
+                    <a href="">
+                        <div class="probe-card featured-probe-card">
+                            <div class="probe-card-content col-sm-6">
+                                <h6 class="text-left">Fallypride</h6>
+                                <img src="img/fallypride.png" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="probe-card featured-probe-card">
+                            <div class="probe-card-content col-sm-6">
+                                <h6 class="text-left">Fallypride</h6>
+                                <img src="img/fallypride.png" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="probe-card featured-probe-card">
+                            <div class="probe-card-content col-sm-6">
+                                <h6 class="text-left">Fallypride</h6>
+                                <img src="img/fallypride.png" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="probe-card featured-probe-card">
+                            <div class="probe-card-content col-sm-6">
+                                <h6 class="text-left">Fallypride</h6>
+                                <img src="img/fallypride.png" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                    </a>
+          
+                </div>
+            </div>
+
+            <!-- right map pane -->
+            <div id='map' class="col-md-8"></div>
+        </div>
+        <!-- end of map container -->
+
+
+        <!-- Scripts -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfL8cx6FjwHHgX440QLPUuJqBxg6Eh3Hk&callback=initMap" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+        <script src="js/maps.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>

@@ -28,6 +28,15 @@ h2.homepage-headings{
   background: #FAFAFA;
 }
 
+.fa-info-circle {
+  color: #4A90E2;
+}
+
+.featured-probe-card{
+  height: 245px;
+  margin-top: 15px;
+}
+
 /* --- Navbar --- */
 .navbar{
 	margin: 10px 0;
@@ -161,10 +170,6 @@ div#popular-probes-container {
   padding-bottom: 50px;
 }
 
-#map{
-  height: 200px;
-  width: 100%;
-}
 
 .thirty-four{
   margin-top: 34.66px;
@@ -189,6 +194,43 @@ ul#footer-links a{
 }
 
 
+/* Maps page*/
+.probe-card{
+  border-radius: 1px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+.probe-card-content{
+  padding: 15px 15px 15px 25px;
+}
+
+.probe-card-content img{
+  height: 150px;
+  width: auto;
+}
+
+div.mapboxgl-ctrl-bottom-left{
+  display: none;
+}
+
+div.map-body, #map{
+  height: calc(100% - 50px);
+  overflow-y: hidden;
+
+}
+
+.input-group-btn button{
+  border-radius: 0 4px 4px 0;
+}
+
+div.search-results{
+  margin-top: 30px;
+}
+
+.ui-widget button {
+    font-size: 14px !important;
+}
 /* Responsive */
 
 /* Phones */

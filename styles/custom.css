@@ -195,6 +195,10 @@ ul#footer-links a{
 
 
 /* Maps page*/
+
+#map{
+  border-radius: 3px;
+}
 .probe-card{
   border-radius: 1px;
   background-color: #ffffff;
@@ -220,8 +224,12 @@ div.map-body, #map{
 
 }
 
-.input-group-btn button{
+.input-btn-right button{
   border-radius: 0 4px 4px 0;
+}
+
+.input-btn-left button{
+  border-radius: 4px 0 0 4px;
 }
 
 div.search-results{
@@ -231,6 +239,20 @@ div.search-results{
 .ui-widget button {
     font-size: 14px !important;
 }
+
+/* Styling the autocomplete drop down in maps page */
+ul.ui-widget li.ui-menu-item {
+  height: 100px;
+}
+
+li.ui-menu-item a.ui-menu-item-wrapper{
+  height: 100%;
+}
+
+div.probe-results-div{
+  border-bottom: 1px solid #CAD2D3;
+}
+
 /* Responsive */
 
 /* Phones */
